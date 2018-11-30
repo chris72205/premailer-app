@@ -11,5 +11,5 @@ RUN bundle install --binstubs
 
 COPY . .
 
-EXPOSE 3050
-CMD ["bundle", "exec", "rails", "s", "-p", "3050"]
+EXPOSE 3000
+CMD ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
