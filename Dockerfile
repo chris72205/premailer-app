@@ -11,4 +11,5 @@ RUN bundle install --binstubs
 
 COPY . .
 
+EXPOSE 3050
 CMD ["bundle", "exec", "rails", "s", "-p", "3050"]
